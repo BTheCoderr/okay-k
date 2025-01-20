@@ -20,10 +20,11 @@ export default function Home() {
       <section className="relative h-screen">
         <Image
           src="/images/IMG_6534.JPG"
-          fill
-          priority
-          className="object-cover"
           alt="okay(K) Hero"
+          width={1920}
+          height={1080}
+          priority
+          className="object-cover absolute inset-0 w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/70 to-primary/30">
           <div className="container mx-auto px-4 h-full flex items-center">
@@ -107,7 +108,8 @@ export default function Home() {
                   <Image
                     src={photo.src}
                     alt={photo.alt}
-                    fill
+                    width={800}
+                    height={800}
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-dark/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
