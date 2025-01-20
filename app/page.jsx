@@ -3,6 +3,7 @@ import YouTubeEmbed from './components/YouTubeEmbed'
 import Navigation from './components/Navigation'
 import SocialIcons from './components/SocialIcons'
 import MusicPlayer from './components/MusicPlayer'
+import imageLoader from '../image-loader'
 
 export default function Home() {
   const photos = [
@@ -19,11 +20,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen">
         <Image
+          loader={imageLoader}
           src="/images/IMG_6534.JPG"
           alt="okay(K) Hero"
           width={1920}
           height={1080}
           priority
+          loading="eager"
           className="object-cover absolute inset-0 w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/70 to-primary/30">
@@ -106,6 +109,7 @@ export default function Home() {
               <div key={index} className="group relative animate-fade-in" style={{ animationDelay: `${index * 150}ms` }}>
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <Image
+                    loader={imageLoader}
                     src={photo.src}
                     alt={photo.alt}
                     width={800}
