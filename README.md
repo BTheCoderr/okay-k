@@ -1,5 +1,11 @@
 # okay(K) Artist Website
 
+<!-- repo-intro:start -->
+**Project snapshot:** A responsive artist website for okay(K) combining music discovery, visual storytelling, social links, booking/collaboration paths, and a polished mobile experience.
+
+**What it demonstrates:** Next.js · Tailwind CSS · media UX · responsive design · artist branding.
+<!-- repo-intro:end -->
+
 A modern, responsive artist website built with Next.js 14 and Tailwind CSS. This website serves as a digital platform for the music artist okay(K), featuring music playback, gallery, and social integration.
 
 ## Features
